@@ -79,7 +79,7 @@ public class WizardControllerTest {
 	@Test
 	public void shouldGetWizardList() {
 		when(this.service.getAll())
-			.thenReturn(this.getMockWizardList());
+				.thenReturn(this.getMockWizardList());
 		
 		List<Wizard> wizardList = this.controller.getWizardList();
 		
